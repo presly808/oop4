@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class GroupStudentsTest {
 	public static void main(String[] args) {
+		String[] mas = new String[6];// 
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Input size of students");
 		int size = sc.nextInt();
@@ -20,10 +22,10 @@ public class GroupStudentsTest {
 		for(int i = 0; i < group.length; i++){// filling array using loop		
 			Student s = new Student(); // create instance of class Student
 			System.out.println("Input name of " + (i+1) +" student");
-			s.name = inputHelper.next();
+			s.name = inputHelper.next();//get name from console
 			
 			System.out.println("Input age");
-			s.age = inputHelper.nextInt();
+			s.age = inputHelper.nextInt();// get age from console
 			
 			group[i] = s; // add student s to group 
 		}
