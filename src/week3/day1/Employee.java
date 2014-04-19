@@ -7,7 +7,7 @@ public class Employee {
 	private double salary;
 	
 	public Employee(){
-		
+		super();
 	}
 	
 	public Employee(String name, int age, double salary){
@@ -42,8 +42,15 @@ public class Employee {
 	}
 	
 	public void printInfo(){
-		System.out.println("name = " + name 
-				+ " age = " + age + " salary = " + salary);
+		System.out.println(this);
 	}
+
+	@Override
+	public String toString() {
+		return "name = " + name 
+				+ " age = " + age + " salary = " + salary;
+	}
+	
+	
 
 }

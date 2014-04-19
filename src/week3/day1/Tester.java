@@ -30,4 +30,10 @@ public class Tester extends Employee {
 		
 	}
 	
+	public void printInfo(){
+		System.out.println("Tester. Type = " + type);
+		super.printInfo();
+		System.out.println("name = " + getName() + " age = " + getAge());
+	}
+	
 }
