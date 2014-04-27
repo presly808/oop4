@@ -1,6 +1,8 @@
 package week3.day1;
 
-public class Employee implements Comparable<Employee>{
+import java.io.Serializable;
+
+public class Employee implements Comparable<Employee>, Serializable {
 	
 	private String name;
 	private int age;
