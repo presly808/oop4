@@ -1,6 +1,6 @@
 package week3.day1;
 
-public class Employee {
+public class Employee implements Comparable<Employee>{
 	
 	private String name;
 	private int age;
@@ -50,7 +50,17 @@ public class Employee {
 		return "name = " + name 
 				+ " age = " + age + " salary = " + salary;
 	}
+
 	
+	@Override
+	public int compareTo(Employee o) {
+		if(this.age < o.getAge()){
+			return -1;
+		} else if(this.age > o.getAge()){
+			return 1;
+		}
+		return 0;
+	}
 	
 
 }
