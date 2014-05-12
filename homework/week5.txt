@@ -1,0 +1,28 @@
+1. Повторить весь материал который проходили в классе
+	inner classes, UML Class Diagram
+	pattern strategy, Aggregation, Composition, Stack,
+	ArrayList
+	
+2. Дописать класс Stack
+
+3. Написать MyArrayList
+	- add
+	- get
+	- set
+	- indexOf
+	- remove
+	- toArray
+	- size
+	- fillByRandomValues() - Заполняет наш ArrayList случайными значениями
+		Его нет в документации
+	- sort(Comparator c) Метод для сортировки 
+		Его нет в документации
+	* equals
+	* trimToSize
+	* contains
+	* ensureCapacity
+	* Сделать параметризованный MyArrayList (использовать Generics) 
+	Описание методов смотрим в документации
+	
+	Использовать все знания по максимуму 
+		переопределение методов класса Object, interfaces, Exceptions
