@@ -1,11 +1,9 @@
 package week5.day2.ex;
 
-public interface IStack {
+public interface IStack <E> {
 	
-	void push(Object o);
+	void push(E o);
 	
-	Object pop();
-	
-	
-	
+	E pop();
+
 }
