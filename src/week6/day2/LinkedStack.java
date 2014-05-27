@@ -3,8 +3,9 @@ package week6.day2;
 import java.util.Iterator;
 
 import week5.day2.ex.IStack;
+import week5.day2.ex.MyStack;
 
-public class LinkedStack<T> implements IStack<T>, Iterable<T>{
+public class LinkedStack<T> implements IStack<T>, Iterable<T>, Cloneable {
 
 	private Node top;
 	
@@ -41,9 +42,17 @@ public class LinkedStack<T> implements IStack<T>, Iterable<T>{
 		return temp.value;
 	}
 	
-	
-	
-	
+	//todo: 
+	@Override
+	public Object clone() throws CloneNotSupportedException {
+		LinkedStack<T> stack = new LinkedStack<T>();
+		for(Node start = top; start != null; start = start.next){
+			stack.push(start.value);
+		}
+		
+		return stack;
+	}
+
 	@Override
 	public Iterator<T> iterator() {
 		return new LinkedStackIterator();
